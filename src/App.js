@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import AlbumsListContainer from './components/AlbumsListContainer';
+
 class App extends React.Component {
   render() {
     return (
@@ -9,7 +11,7 @@ class App extends React.Component {
         </header>
 
         <main>
-          
+          <AlbumsListContainer />
         </main>
       </div>
     );
