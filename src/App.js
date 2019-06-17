@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import AlbumsListContainer from './components/AlbumsListContainer';
+import PhotoPageContainer from './components/PhotoPageContainer'
+import { Route } from 'react-router-dom'
 
 class App extends React.Component {
   render() {
@@ -11,7 +13,8 @@ class App extends React.Component {
         </header>
 
         <main>
-          <AlbumsListContainer />
+          <Route exact path="/" component={AlbumsListContainer} />
+          <Route exact path="/albums/:id" component={PhotoPageContainer} />
         </main>
       </div>
     );
